@@ -1,13 +1,19 @@
 /* eslint-disable react/react-in-jsx-scope */
-// import logo from './logo.svg'
 import './App.css'
+import { AppBar, Toolbar, Typography } from '@mui/material'
+
+// const pages = ['Home', 'About me', 'Contact']
 
 function App () {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Cabrera Kevin</h1>
-      </header>
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            Kevin Fernando Cabrera Vaca
+          </Typography>
+        </Toolbar>
+      </AppBar>
     </div>
   )
 }
